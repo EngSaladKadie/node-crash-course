@@ -1,11 +1,12 @@
 const http= require('http');
-
+const PORT =5000;
+const HOSTNAME ="localhost";
 const server= http.createServer((req, res)=>{
     console.log("requiest made");
     
 })
  
-server.listen(5000, 'localhost',()=>{
-    console.log("the server runing port 5000");
+server.listen(PORT, HOSTNAME,()=>{
+    console.log(`the server runing this: ${PORT}`);
     
 })
