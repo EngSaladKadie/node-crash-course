@@ -2,30 +2,30 @@
 const { error } = require('console');
 const fs = require('fs');
 
-// fs.readFile('./Docs/blog2.csv',(erro, data)=>{
-//     if (erro) {
-//         console.log(erro);
-//     }
-//       console.log(data.toString());
+fs.readFile('./Docs/blog2.csv',(erro, data)=>{
+    if (erro) {
+        console.log(erro);
+    }
+      console.log(data.toString());
         
         
     
-// })
+})
 
-// fs.writeFile('./Docs/blog2.csv',"waxaa la tir tiray data hore",(error)=>{
-//     if (error) {
-//         console.log(error);
+fs.writeFile('./Docs/blog2.csv',"waxaa la tir tiray data hore",(error)=>{
+    if (error) {
+        console.log(error);
         
         
-//     }
-//   console.log('wos written the file');
+    }
+  console.log('wos written the file');
   
     
-// })
-// fs.writeFile('./Docs/blog3.txt',"hello world",()=>{
-//     console.log('wos written the file');
+})
+fs.writeFile('./Docs/blog3.txt',"hello world",()=>{
+    console.log('wos written the file');
     
-// })
+})
 
 
 // if(!fs.existsSync('./assets')){
