@@ -28,33 +28,33 @@ fs.writeFile('./Docs/blog3.txt',"hello world",()=>{
 })
 
 
-// if(!fs.existsSync('./assets')){
-//     fs.mkdir('./assets',(error)=>{
-//         if (error) {
-//             console.log(error);
+if(!fs.existsSync('./assets')){
+    fs.mkdir('./assets',(error)=>{
+        if (error) {
+            console.log(error);
             
             
-//         }
-//         console.log('this folder was created');
+        }
+        console.log('this folder was created');
         
-//     })
+    })
   
-// }  else{
-//     fs.rmdir('./assets',(error)=>{
-//         console.log(error);
+}  else{
+    fs.rmdir('./assets',(error)=>{
+        console.log(error);
         
-//     })
-//     console.log('this folder was deleted');
+    })
+    console.log('this folder was deleted');
     
-// }
+}
     
-// if(fs.existsSync('./dear.txt')){
-//     fs.unlink('./dear.txt',(err)=>{
-//         console.log(err);
+if(fs.existsSync('./dear.txt')){
+    fs.unlink('./dear.txt',(err)=>{
+        console.log(err);
         
-//     })
-//     console.log('this file was deleted');
-// }
+    })
+    console.log('this file was deleted');
+}
 
 
 
