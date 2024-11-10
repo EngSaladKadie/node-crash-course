@@ -1,8 +1,12 @@
 const http= require('http');
 const fs = require('fs');
+const lod = require('lodash');
 
 const server = http.createServer((req, res)=>{
-    console.log(req.url, req.method);
+    // const num = lod.random(0,10);
+    // console.log(num);
+    
+    
     res.writeHead(404, 'not found', {'content-type': 'text/html'});
 
     let path = '../view/';
@@ -19,7 +23,11 @@ const server = http.createServer((req, res)=>{
             res.statusCode = 301;
             res.setHeader('location','/about');
             res.end();
-        break;   
+        break; 
+        case '/Contact':
+            path += 'Contact.html';
+            res.statusCode = 200;
+        break;  
            
         default:
             path +='404.html';
