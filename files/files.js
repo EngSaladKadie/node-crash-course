@@ -1,4 +1,5 @@
 
+const { execFileSync } = require('child_process');
 const { error } = require('console');
 const fs = require('fs');
 
@@ -102,3 +103,17 @@ fs.writeFile('./Docs/blog4.csv',"iga raali noqo wax qaladan ayan kusuu diray ",(
 //     })
 // }
 
+
+if(!fs.existsSync('./files.js')){
+    fs.mkdir('/assets' ,(err)=>{
+        console.log('file wos created');
+        
+
+    })
+}
+else{
+    fs.rmdir('/assets',(err)=>{
+        console.log('folder delete');
+        
+    })
+}
